@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #523FFF;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #8484A7;
+    --light-gray: #EDEDF9;
+    --red: #E13B3B;
+    --shadows: #DDDDEB;
+    --border: #E7E7FF;
+    --border-skills: #ECECF8;
+
+    --heading-font-size: 24px;
+    --body-font-size: 14px;
+    --skills-font-size: 12px;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: "Inter", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 8px;
+    width: 735px;
+    height: 338px;
+    box-shadow: 0px 4px 45.7px var(--shadows);
+}
+
+.header {
+    padding: 32px 37px 0px 37px;
+}
+
+.heading {
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+}
+
+.sub-heading{
+    font-size: var(--body-font-size);
+    font-weight: 500;
+    color: var(--gray);
+    margin-top: 7px;
+}
+
+.line{
+    width: 734px;
+    height: 1px;
+    background-color: var(--light-gray);
+    margin-top: 17px;
+}
+
+.input-box{
+    display: inline-flex;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 37px;
+}
+
+.input-text{
+    padding: 20px 15px;
+    border-radius: 6px;
+    border: solid 1px var(--border);
+    width: 583px;
+}
+
+.input-text:focus{
+    /* border-color: var(--border); */
+    outline: none;
+}
+
+.button-add{
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--purple);
+    padding: 8px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.button-add:hover{
+    background-color: #846AF8;
+}
+
+.skills{
+    width: 660px;
+    margin: 24px 31px;
+}
+.skill-card{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 32px;
+    border: solid 1px var(--border-skills);
+    border-radius: 29px;
+    padding: 8px 16px;
+    gap: 10px;
+    margin: 8px 6px;
+}
+
+.skill-text{
+    font-size: var(--skills-font-size);
+    font-weight: 500;
+    color: var(--black);
+    line-height: 14.52px;
+}
+
+.delete-skill{
+    font-size: 12px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.delete-skill:hover{
+    color: var(--red);
+}
+
+
+
+
+
+
+
